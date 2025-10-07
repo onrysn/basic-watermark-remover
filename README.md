@@ -1,3 +1,30 @@
+# Ortamı oluştur
+python -m venv watermarkenv
+
+# Ortamı aktif et (Windows)
+watermarkenv\Scripts\activate
+
+# Ortamı aktif et (Mac/Linux)
+source watermarkenv/bin/activate
+pip install opencv-python
+pip install Pillow
+pip install numpy
+pip install tensorflow==1.15.5
+pip install neuralgym
+
+watermark-removal/
+├── main.py
+├── preprocess_image.py
+├── inpaint_model.py
+├── inpaint.yml
+├── model/                  # TensorFlow checkpoint dosyaları
+├── test_images/           # İşlenecek görseller
+├── cleaned_images/        # Çıktıların kaydedileceği klasör
+├── utils/
+│   └── fmgproducts/
+│       └── landscape/
+│           └── mask.png   # 1000×1000 boyutlu, hizalı maske
+
 Chimzuruoke Okafor
 
 # Watermark-Removal
