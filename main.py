@@ -16,7 +16,7 @@ parser.add_argument('--output', default='output.png', type=str,
                     help='Where to write output.')
 parser.add_argument('--watermark_type', default='istock', type=str,
                     help='The watermark type')
-parser.add_argument('--checkpoint_dir', default='model/', type=str,
+parser.add_argument('--checkpoint_dir', default='model_onur/', type=str,
                     help='The directory of tensorflow checkpoint.')
 
 #checkpoint_dir = 'model/'
