@@ -6,11 +6,17 @@ watermarkenv\Scripts\activate
 
 # Ortamı aktif et (Mac/Linux)
 source watermarkenv/bin/activate
+
+
 pip install opencv-python
 pip install Pillow
 pip install numpy
 pip install tensorflow==1.15.5
 pip install neuralgym
+
+python toplu_calistirma.py
+python main.py
+
 
 watermark-removal/
 ├── main.py
